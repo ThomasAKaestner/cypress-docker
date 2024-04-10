@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "devDependencies": {
     "@cypress/browserify-preprocessor": "^3.0.2",
     "cypress": "^13.7.2"
