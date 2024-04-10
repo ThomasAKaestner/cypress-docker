@@ -3,8 +3,17 @@ APP_CONTAINER_NAME = "cypress"
 build:
 	docker-compose build
 
-start:
+test-docker:
 	docker-compose up
 
 test:
-	docker-compose exec -t $(APP_CONTAINER_NAME) cypress run
+	./node_modules/.bin/cypress run
+
+ui:
+	./node_modules/.bin/cypress open
+
+lint:
+	./node_modules/.bin/eslint ./
+
+lint-fix:
+	./node_modules/.bin/eslint --fix ./

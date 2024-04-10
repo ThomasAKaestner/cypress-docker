@@ -1,9 +1,14 @@
 {
+  "type": "module",
   "devDependencies": {
+    "@cypress/browserify-preprocessor": "^3.0.2",
     "cypress": "^13.7.2"
   },
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run"
+  },
+  "dependencies": {
+    "eslint-plugin-cypress": "^2.15.1"
   }
 }
